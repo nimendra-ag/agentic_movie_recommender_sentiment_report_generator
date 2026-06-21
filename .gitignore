@@ -1,2 +1,11 @@
-__pycache__
-.venv
+# Secrets — never commit
+.env
+
+# Strip notebook outputs before committing (install: pip install nbstripout)
+# Run once to activate: nbstripout --install
+*.ipynb filter=nbstripout
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
